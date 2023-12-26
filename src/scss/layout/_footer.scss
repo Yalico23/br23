@@ -1,0 +1,23 @@
+.footer{
+    padding: 2.5rem 0;
+    background-color: $grisOscuro;
+    margin-bottom: 0;
+    .contenedor-footer{
+        padding-top: 2.5rem;
+        
+    }
+    .copyright{
+        color: white;
+        text-align: center;
+    }
+    .navegacion{//para solucionar el problema de la navegacion que desaparece por el icono menu revisar clase 299
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        @include tablet{
+            flex-direction: column;
+        }
+    }
+}

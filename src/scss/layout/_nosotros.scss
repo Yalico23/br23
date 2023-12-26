@@ -1,0 +1,21 @@
+.nosotros-contenedor{
+    @include grid(2,2rem);
+    @include tablet{
+        @include grid(1,2rem);
+    }
+    .nosotros-imagen{
+        img{
+            border-radius: 2rem;
+        }
+    }
+    .nosotros-texto{
+        h3{
+            color: $negro;
+            font-weight: $black;
+            margin:3rem 0 0 0;
+            font-size: 2.2rem;
+            padding-left: 1rem 0 3rem 0;
+            text-align: left;
+        }
+    }
+}
